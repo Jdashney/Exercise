@@ -1,0 +1,22 @@
+def find_next_prime(n):
+    if type(n) == str or type(n) == float:
+        return "Please enter and integer only"
+    prime_found = False
+    n += 1 # Start at entered # + 1
+    div = 2
+    while prime_found == False:
+        while div<n:  
+            if n%div == 0:
+                n += 1 # check following number
+                div = 2 # reset diviser to 2
+            elif n%div != 0:
+                div += 1 # Check the next diviser
+        prime_found = True
+        return n
+
+print find_next_prime(10) # Should be 11
+print find_next_prime(11) # Should be 13
+print find_next_prime(44) # Should be 47
+print find_next_prime(104702) # Should be 140707
+print find_next_prime("A") # Should print error message
+print find_next_prime(7.7) # Should print erorr message
