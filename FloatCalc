@@ -1,0 +1,20 @@
+def calculator(param1, param2, operation):
+    
+    if operation == 'add':
+        result = param1 + param2
+        return result
+    elif operation == 'subtract':
+        result = param1 - param2
+        return result
+    elif operation == 'multiply':
+        result = param1 * param2
+        return result
+    elif operation == 'divide':
+        if param1 % param2 != 0:
+            result = float(param1) / float(param2)
+            return result
+        else:
+            result = param1 / param2
+            return result
+    else:
+        print "Error, please check parameters"
