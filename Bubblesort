@@ -1,0 +1,10 @@
+def bubblesort(a_list):
+    print "original list " + str(a_list[:])
+    done = False   
+    
+    while done == False:
+        done = True
+        for i in range(len(a_list)-1):
+            if a_list[i] > a_list[i+1] :
+                a_list[i], a_list[i+1] = a_list[i+1], a_list[i]
+                done = False
