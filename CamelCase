@@ -1,0 +1,10 @@
+def camel_case(a_string):
+    list = a_string.split()
+    cc = []
+    for word in list:
+         cc.append(word[0].upper() + word[1:].lower())
+    output = ' '.join(cc)
+    return output
+    
+    
+print camel_case('hello world')    
