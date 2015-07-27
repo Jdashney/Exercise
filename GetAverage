@@ -1,0 +1,8 @@
+from decimal import Decimal
+
+def make_avg():
+    items = [int(x) for x in input("Enter your numbers separated by a comma: ").split(',')]
+   
+    if len(items) == 1:
+        avg = items[0] 
+    else:
