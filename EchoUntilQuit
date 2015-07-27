@@ -1,0 +1,25 @@
+"""
+Define a function that asks for a string and echoes it back until the input 'quit' is provided.
+Example:
+    echo()
+    > Insert a string: hello
+    > hello
+    > Insert a string: world
+    > world
+    > Insert a string: quit
+    > bye!
+"""
+
+def echo():
+    text = raw_input('Insert a string:')
+    while text != "quit":
+        printed = 0
+        while printed < 1:
+            print text
+            printed += 1
+            text = raw_input('Insert a string:')
+    else:
+       print "bye!"
+
+
+echo()
