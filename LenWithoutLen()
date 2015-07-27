@@ -1,0 +1,6 @@
+
+def length(a_string):
+    count = 0
+    for x in a_string[0:]:
+        count +=1
+    return count
