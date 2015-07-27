@@ -1,0 +1,32 @@
+def second_counter():
+    
+    print 'Welcome to the second converter'
+    hours = 3600 # 3600 seconds in an hour
+    minutes = 60 # 60 seconds in a minute
+    seconds = 1 # 1 second in a second
+
+    a = int(raw_input ('How many hours?'))
+    b = int(raw_input ('How many minutes?'))
+    c = int(raw_input ('How many seconds?'))
+    print 'you entered %r hours %r minutes %r seconds' % (a, b, c) 
+    
+    total_seconds = (a * hours) + (b * minutes) + (c * seconds)
+    print 'There are %s seconds in %s hours %s minutes %s seconds' % (total_seconds, a, b, c)
+    
+second_counter()
+
+
+# HHMMSS hardcorded
+def second_counter():
+    
+    print 'Welcome to the second converter'
+
+    a = int(raw_input ('How many hours?'))
+    b = int(raw_input ('How many minutes?'))
+    c = int(raw_input ('How many seconds?'))
+    print 'you entered %r hours %r minutes %r seconds' % (a, b, c) 
+    
+    total_seconds = (a * 3600) + (b * 60) + (c)
+    print 'There are %s seconds in %s hours %s minutes %s seconds' % (total_seconds, a, b, c)
+    
+second_counter()
