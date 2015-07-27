@@ -1,0 +1,18 @@
+"""
+Write a function that receives a list and an element and returns how many occurrences
+of that particular element are in the list.
+Example:
+
+ocurrences([7, 1, 5, 8, 0, 7, 9, 1, 7], 7)  # The number 7 is repeated 3 times.
+> 3
+
+"""
+
+def ocurrences(a_list, an_element):
+    count = 0
+    for x in a_list:
+        if x == an_element:
+            count +=1
+    return count
+            
+print ocurrences([7, 1, 5, 8, 0, 7, 9, 1, 7], 7)
