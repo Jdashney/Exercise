@@ -1,0 +1,20 @@
+from random import randint
+
+def guess_a_number():
+    print "Please guess a number between 0 and 100!"
+    comp_number = randint(0,100)
+    guessed = False
+    count = 0
+    while guessed == False:
+        player_number = int(raw_input('Please enter an integer:'))
+        count +=1
+        if player_number == comp_number:
+            guessed = True
+            print "Good job! It took you %s guess(es)" % count
+        elif player_number > comp_number:
+            print " Too high!"
+        elif player_number < comp_number:
+            print "Too low!"
+        else: 
+            print "Error, please check parameters"
+guess_a_number()
